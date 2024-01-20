@@ -1,0 +1,73 @@
+[ Background ]
+The emergence of object-oriented programming (OOP) can be attributed to the limitations of procedural programming (e.g., C language) as computer systems advanced, leading to increased complexity and inefficiency, especially with factors like memory management and graphical user interfaces (GUI).
+
+[ New Perspective]
+Object-oriented programming involves modeling real-world entities as objects, defining their behaviors (methods), and attributes (variables).
+
+[Java]
+In Java, features such as garbage collection (memory management) and the Java Virtual Machine (JVM) contribute to platform compatibility.
+
+[Object Design - 3 Elements]
+1. State Maintenance (Object's State):
+Objects store and modify their state information through attributes (variables), ensuring the preservation of their state.
+2. Functionality Provision (Object's Responsibility):
+Encapsulation allows objects to provide functionality (methods) without external access, emphasizing the responsibilities of the object.
+3. Unique Identifier Provision (Object's Uniqueness):
+Objects require unique identifiers to distinguish themselves, ensuring their individuality within the system.
+
+[Object Classification ]
+Physical Objects:
+Real-world entities with a tangible existence are defined as classes, representing instances of those entities.
+Conceptual Objects:
+Entities related to business logic are represented as conceptual objects, often implemented as services in web systems.
+
+[ Method Design ]
+- Should provide functionality for declaring attributes and changing states.
+- Must offer all the functionalities possessed by the physical object.
+- Each method should be related to one another.
+- Methods within an object should only handle internal attributes and not directly process tasks related to attributes in external objects (external object attributes are obtained in the form of parameters, e.g., using get methods).
+- Include getter/setter methods.
+- CRUD (Create, Read, Update, Delete) methods.
+- Business logic processing.
+- Object lifecycle management.
+- Persistent management of object (private).
+
+[ 4 Key Features of OOP ]
+1. Encapsulation - Safeguarding Object Attributes:
+- Restricts external access to attributes, utilizing methods for interaction.
+- Offers abstraction: No need for an external understanding of internal workings; functionality is executed through method calls.
+- Enhances reusability: Encapsulating attributes and methods within a class increases the modularity and cohesion of the object.
+- Improves maintenance efficiency: Modifying methods affects only a single object, enhancing maintenance efficiency.
+2. Inheritance - Specialization Down the Hierarchy:
+- Specializes classes as we move down the hierarchy.
+- Understanding program structure: A clear understanding of subclass behavior is facilitated through the structure of the top parent class.
+- Improves reusability: Inherited attributes and methods can be used without redefinition.
+- Enhances scalability: Adding consistent class objects becomes easier in a uniform manner.
+- Improves maintenance efficiency: Child objects inherit methods from the parent, ensuring consistency and reducing workload during modifications.
+3. Polymorphism - Object's Ability to Take Multiple Forms (Overriding):
+- Allows one object to assume multiple forms.
+- Overriding: Enables the same method name to have different implementations in different classes.
+4. Abstraction - Simplifying complex systems by modeling classes based on common attributes and behaviors.
+- Separates commonalities and specific characteristics for recombination.
+- Both polymorphism and inheritance are integral to abstraction.
+
+[ Terminology ]
+Modularity (+): Breaking down software into small independent modules.
+- Enhances code readability, promotes reusability, and facilitates ease of maintenance.
+Integrity (+): Maintaining the system in a state where it operates as intended.
+- Ensures that the software functions as expected and results are consistently maintained.
+Dependency (-): The relationship where one element relies on another to function.
+- While interaction and dependency among modules are necessary, minimizing unnecessary dependencies eases maintenance and changes.
+Cohesion : The degree to which elements within a module share the same purpose or responsibility.
+- High cohesion implies that a module is focused on a single function, promoting consistency within the module.
+Coupling (-): The degree of interdependence between two modules.
+- Low coupling minimizes mutual dependencies, allowing for independent modifications and changes.
+- Decoupling : Minimizing interdependencies between software components to achieve independence and flexibility.
+
+[ SOLID Principles ]
+Enhance software design and maintainability.
+1. Single Responsibility
+2. Open/Closed
+3. Liskov Substitution
+4. Interface Segregation
+5. Dependency Inversion
